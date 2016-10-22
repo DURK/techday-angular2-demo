@@ -1,5 +1,5 @@
 <ul>
   <li *ngFor="let meetup of meetups">
-      {{ meetup.title }}
+      {{ meetup.title }} - {{ meetup.date|date:"dd-MM-yyyy HH:mm" }}
   </li>
 </ul>

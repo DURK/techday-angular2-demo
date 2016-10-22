@@ -1,22 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { Meetup } from './meetup';
+import { MeetupsService } from './meetups.service';
 
 @Component({
   selector: 'meetups',
-  templateUrl : 'meetups.component.html'
+  templateUrl: 'meetups.component.html'
 })
 export class MeetupsComponent implements OnInit {
   meetups: Meetup[];
 
-  constructor() {
+  constructor(private meetupsService: MeetupsService) {
   }
 
   ngOnInit(): void {
-    this.meetups = [
-      new Meetup('New Years Talk', new Date(2017, 1, 1), true),
-      new Meetup('Avisi Techday', new Date(2016, 9, 27, 16), true),
-      new Meetup('HAN Tosti-Talk', new Date(2016, 9, 27, 12), false),
-    ]
+    this.meetupsService.getMeetups().then(res => {
+      this.meetups = res;
+    });
   }
 
 }
