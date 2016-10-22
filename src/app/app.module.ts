@@ -4,22 +4,21 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { MeetupsComponent } from './meetups.component';
-import { MeetupsService } from './meetups.service';
+import { MeetupsComponent } from './meetups/meetups.component';
+import { MeetupsService } from './meetups/meetups.service';
+import { MeetupsModule } from './meetups/meetups.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    MeetupsComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    MeetupsModule
   ],
-  providers: [
-    MeetupsService
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
