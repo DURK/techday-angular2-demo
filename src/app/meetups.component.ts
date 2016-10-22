@@ -14,7 +14,7 @@ export class MeetupsComponent implements OnInit {
   ngOnInit(): void {
     this.meetups = [
       new Meetup('New Years Talk', new Date(2017, 1, 1), true),
-      new Meetup('Avisi Techday', new Date(), true),
+      new Meetup('Avisi Techday', new Date(2016, 9, 27, 16), true),
       new Meetup('HAN Tosti-Talk', new Date(2016, 9, 27, 12), false),
     ]
   }
