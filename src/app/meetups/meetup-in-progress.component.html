@@ -1,0 +1,4 @@
+<p *ngIf="!dismissed">
+  <span class="blink"><strong>{{ meetup.title }}</strong> currently in progress!</span>
+  <button (click)="dismiss()">X</button>
+</p>

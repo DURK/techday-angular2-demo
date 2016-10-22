@@ -2,16 +2,19 @@
   {
     "title": "New Years Talk",
     "date": 1483225200000,
+    "endDate": 1483235200000,
     "open": true
   },
   {
     "title": "Avisi Techday",
     "date": 1477576800000,
+    "endDate": 1477586800000,
     "open": true
   },
   {
     "title": "HAN Tosti-Talk",
     "date": 1477562400000,
+    "endDate": 1477572400000,
     "open": false
   }
 ]
