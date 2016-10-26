@@ -1,5 +1,13 @@
 # NgMeetups
 
+Checkout one of the branches from my example:
+- master (starting point from the angular CLI)
+- step-2-components
+- step-3-services
+- step-4-modules
+- step-5-component-input
+
+
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.18.
 
 ## Development server
